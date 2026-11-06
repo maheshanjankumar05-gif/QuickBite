@@ -1,0 +1,28 @@
+{
+  "name": "quickbite-monorepo",
+  "version": "1.0.0",
+  "description": "QuickBite Online Food Delivery System - Full MERN Stack Application",
+  "scripts": {
+    "dev:backend": "cd backend && node server.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:admin": "cd admin && npm run dev",
+    "seed": "cd backend && npm run seed",
+    "build:frontend": "cd frontend && npm run build",
+    "build:admin": "cd admin && npm run build",
+    "build": "npm run build:frontend && npm run build:admin"
+  },
+  "keywords": [
+    "mern",
+    "food-delivery",
+    "quickbite",
+    "react",
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "author": "Antigravity MERN Expert",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
